@@ -1,6 +1,8 @@
+import React from "react";
 import me from "../assets/me.png";
 import { TypeAnimation } from "react-type-animation";
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 
 const Main = () => {
   return (
@@ -10,7 +12,7 @@ const Main = () => {
         src={me}
         alt="Francisco Porciel"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/50 select-none">
+      <div className="w-full h-screen absolute top-0 left-0 bg-white bg-opacity-50 select-none">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
             I'm Francisco Porciel
@@ -19,13 +21,13 @@ const Main = () => {
             I'm a
             <TypeAnimation
               sequence={[
-                "Developer",
+                "developer",
                 1000,
-                "Coder",
+                "coder",
                 1000,
-                "Tech enthusiast",
+                "tech enthusiast",
                 1000,
-                "Lol enjoyer",
+                "lol enjoyer",
                 1000,
               ]}
               wrapper="span"
@@ -35,10 +37,34 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaTwitter className="cursor-pointer" size={20} />
-            <FaFacebook className="cursor-pointer" size={20} />
-            <FaInstagram className="cursor-pointer" size={20} />
-            <FaLinkedin className="cursor-pointer" size={20} />
+            <a
+              href="https://github.com/frannpor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="cursor-pointer" size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/frannpor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="cursor-pointer hover:" size={20} />
+            </a>
+            <a
+              href="https://www.instagram.com/frannporciel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="cursor-pointer hover:" size={20} />
+            </a>
+            <a
+              href="mailto:frannporciel@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BiLogoGmail className="cursor- hover:" size={20} />
+            </a>
           </div>
         </div>
       </div>
