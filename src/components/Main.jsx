@@ -27,8 +27,6 @@ const Main = () => {
                 1000,
                 "tech enthusiast",
                 1000,
-                "lol enjoyer",
-                1000,
               ]}
               wrapper="span"
               speed={50}
