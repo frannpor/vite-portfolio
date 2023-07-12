@@ -8,11 +8,11 @@ const Main = () => {
   return (
     <div id="main">
       <img
-        className="w-full h-screen object-cover object-left"
+        className="w-full h-screen object-cover"
         src={me}
         alt="Francisco Porciel"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white bg-opacity-50 select-none">
+      <div className="w-full h-screen absolute top-0 left-0 bg-white bg-opacity-60 select-none">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
             I'm Francisco Porciel
