@@ -16,9 +16,9 @@ const Projects = () => {
         applications. Take a look below to explore some of my featured projects.
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
-        <Project img={sweethomeImg} title="Sweet Home" link="https://sweet-home-w1rt.onrender.com/" />
+        <Project img={sweethomeImg} title="Sweet Home" link="https://sweet-home-front.onrender.com/" />
         <Project img={airbnbImg} title="Airbnb" link="https://github.com/frannpor/Airbnb" />
-        <Project img={dogworldImg} title="Dog World" link="https://github.com/frannpor/PI-Dogs-main" />
+        <Project img={dogworldImg} title="Dog World" link="https://dogs-world-pern-stack.onrender.com/" />
       </div>
     </div>
   );
