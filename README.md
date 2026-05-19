@@ -36,3 +36,38 @@ CONTACT_FROM_EMAIL="Portfolio <onboarding@resend.dev>"
 ```
 
 See `.env.example`.
+
+## Render Deploy
+
+This app uses Next.js App Router and an API route for the contact form, so deploy it on Render as a **Web Service** when email sending should work.
+
+Recommended Render settings:
+
+```txt
+Language: Node
+Build Command: npm ci && npm run build
+Start Command: npm run start
+```
+
+Runtime:
+
+```txt
+NODE_VERSION=22.16.0
+```
+
+The repository also includes `.node-version`, so Render can pick the same runtime from source control. Node 14 is not supported by the current dependency stack.
+
+Required environment variables for real email:
+
+```txt
+RESEND_API_KEY=
+CONTACT_TO_EMAIL=
+```
+
+Optional:
+
+```txt
+CONTACT_FROM_EMAIL="Portfolio <onboarding@resend.dev>"
+```
+
+If the project is deployed as a Render **Static Site**, the portfolio can render as static output only if the server API route is not needed. The contact form endpoint requires a Node server.
